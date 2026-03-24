@@ -8,4 +8,7 @@ function analyze() {
     }
   });
   let missing = skills.filter(skill => !found.include(skill));
-  document.getElementById("Result
+  document.getElementById("Result").innerHTML = 
+    "Matched Skills: "+ found.join(", ") +
+    "<br>Missing Skills: " + missing.join(", "):
+}
